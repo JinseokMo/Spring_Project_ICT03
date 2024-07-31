@@ -1,0 +1,341 @@
+@charset "UTF-8";
+
+
+
+body {
+  font-family: SF Pro KR,SF Pro Text,SF Pro Icons,Apple Gothic,HY Gulim,MalgunGothic,HY Dotum,Lexi Gulim,Helvetica Neue,Helvetica,Arial,sans-serif;
+  
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+  outline: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+input:focus {
+  outline: none;
+}
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    line-height: 1.25;
+    color: var(--bs-heading-color);
+}
+
+/* ================ 메인 =================== */
+/* .position-relative{
+	background-color : #F8F8F8;
+} */
+
+.avatar-xs { /* 프로필 썸네일 */
+    height: 2.1875rem;
+    width: 2.1875rem;
+}
+.nav .nav-divider .nav-item {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav .nav-divider .nav-item + .nav-item:before {
+    content: "•";
+    color: inherit;
+    padding-left: 0.65rem;
+    padding-right: 0.75rem;
+    opacity: 0.8;
+}
+.nav {
+    --bs-nav-link-padding-x: 0.75rem;
+    --bs-nav-link-padding-y: 0.25rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: var(--bs-body-color);
+    --bs-nav-link-hover-color: var(--bs-link-hover-color);
+    --bs-nav-link-disabled-color: var(--bs-gray-500) !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.like_btn{
+	text-align:right;
+	padding-right:1rem;
+}
+
+
+/* .card {
+    --bs-card-spacer-y: 0.75rem;
+    --bs-card-spacer-x: 1.25rem;
+    --bs-card-title-spacer-y: 0.5rem;
+    --bs-card-title-color: var(--bs-heading-color);
+    --bs-card-subtitle-color: ;
+    --bs-card-border-width: 0;
+    --bs-card-border-color: var(--bs-border-color);
+    --bs-card-border-radius: 0.7rem;
+    --bs-card-box-shadow: ;
+    --bs-card-inner-border-radius: 0.7rem;
+    --bs-card-cap-padding-y: 0.5rem;
+    --bs-card-cap-padding-x: 1rem;
+    --bs-card-cap-bg: var(--bs-body-bg);
+    --bs-card-cap-color: ;
+    --bs-card-height: ;
+    --bs-card-color: ;
+    --bs-card-bg: var(--bs-body-bg);
+    --bs-card-img-overlay-padding: 1.25rem;
+    --bs-card-group-margin: 0.9375rem;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    height: var(--bs-card-height);
+    color: var(--bs-body-color);
+    word-wrap: break-word;
+    background-color: var(--bs-card-bg);
+    background-clip: border-box;
+    border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+    border-radius: var(--bs-card-border-radius);
+} */
+.col .card {
+	border: 0;
+	height: 39rem;
+	position: relative;
+	margin-bottom: 2rem;
+}
+.card-img{
+	
+	height: 18rem;
+	object-fit:cover;
+}
+.card-title a {
+	text-decoration: none;
+}
+.card .nav {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+.card .nav .nav-item {
+	float:left;
+	position: relative;
+}
+
+.nav-item .nav-link{
+	padding: 0;
+}
+
+.nav-item .nav-link a{
+	text-decoration: none;
+	color: #a9a9a9;
+}
+.nav-item .nav-link span{
+	text-decoration: none;
+	color: #a9a9a9;
+}
+
+.card .nav li:nth-child(3){
+	text-align: right;
+}
+/* ================ 로그인 =================== */
+
+.login-container{
+	position: relative;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+.login-wrapper{
+    width: 400px;
+    height: auto;
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: 3px 4px 22px #ccc;
+    border-radius: 20px;
+}
+
+.login-wrapper > h2{
+    font-size: 24px;
+    color: #ff5000;
+    margin-bottom: 20px;
+}
+#login-form > input{
+    width: 100%;
+    height: 48px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    background-color: #F8F8F8;
+    border:0.5px solid #D2D2D2;
+}
+#login-form > input::placeholder{
+    color: #D2D2D2;
+}
+#login-form > input[type="submit"]{
+    color: #fff;
+    font-size: 16px;
+    background-color: #ff5000;
+    margin-top: 20px;
+    border:0.5px solid #D2D2D2;
+}
+#login-form > input[type="checkbox"]{
+    display: none;
+}
+#login-form > label{
+    color: #999999;
+}
+#login-form input[type="checkbox"] + label{
+    cursor: pointer;
+    padding-left: 26px;
+    background-image: url("checkbox.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#login-form input[type="checkbox"]:checked + label{
+    background-image: url("checkbox-active.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* ================ 회원가입 =================== */
+
+.signup-container{
+	position: relative;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+.signup-wrapper{
+    width: 700px;
+    height: auto;
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: 3px 4px 22px #ccc;
+    border-radius: 20px;
+}
+
+.signup-wrapper > h2{
+    font-size: 24px;
+    color: #ff5000;
+    margin-bottom: 20px;
+}
+#signup-form tr:nth-child(1) input{
+    width: 33%;
+    height: 48px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    background-color: #F8F8F8;
+    border:0.5px solid #D2D2D2; 
+}
+#signup-form tr input:nth-child(2){
+    width: 20%;
+    height: 48px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    background-color: #F8F8F8;
+    border:0.5px solid #D2D2D2; 
+}
+#signup-form tr input:nth-child(4){
+    width: 17%;
+    height: 48px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    background-color: #F8F8F8;
+    border:0.5px solid #D2D2D2; 
+}
+
+#signup-form tr select:nth-child(3){
+    width: 22%;
+    height: 48px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    background-color: #F8F8F8;
+    border:0.5px solid #D2D2D2; 
+}
+
+#signup-form tr td input{
+    width: 100%;
+    height: 48px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    background-color: #F8F8F8;
+    border:0.5px solid #D2D2D2; 
+}
+#signup-form tr th label{
+    font-size:15px;
+    font-weight: 200;
+    margin: 0 1.3rem 0 0;
+}
+#signup-form tr td select{
+    width: 100%;
+    height: 48px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    background-color: #F8F8F8;
+    border:0.5px solid #D2D2D2; 
+}
+#signup-form td > input::placeholder{
+    color: #D2D2D2;
+}
+.singup_submit > input[type="submit"]{
+	height: 48px;
+    color: #fff;
+    font-size: 16px;
+    background-color: #ff5000;
+    margin-top: 20px;
+    padding: 5px 70px;
+    border-radius: 6px;
+    border:0.5px solid #D2D2D2; 
+}
+.singup_submit > input[type="reset"]{
+	height: 48px;
+    color: #ff5000;
+    font-size: 16px;
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 5px 70px;
+    border-radius: 6px;
+    border:0.5px solid #D2D2D2; 
+}
+

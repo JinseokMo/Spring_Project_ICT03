@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+/* ================ 로그인 =================== */
+
+.container{
+	position: relative;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	margin-top:5rem;
+}
+.contents{
+    width: 400px;
+    height: auto;
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: 3px 4px 22px #ccc;
+    border-radius: 20px;
+}
+
+.contents > h2{
+    font-size: 24px;
+    color: #ff5000;
+    margin-bottom: 20px;
+}
+#login-form > input{
+    width: 100%;
+    height: 48px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    background-color: #F8F8F8;
+    border:0.5px solid #D2D2D2;
+}
+#login-form > input::placeholder{
+    color: #D2D2D2;
+}
+#login-form > input[type="submit"]{
+    color: #fff;
+    font-size: 16px;
+    background-color: #ff5000;
+    margin-top: 20px;
+    border:0.5px solid #D2D2D2;
+}
+#login-form > input[type="checkbox"]{
+    display: none;
+}
+#login-form > label{
+    color: #999999;
+}
+#login-form input[type="checkbox"] + label{
+    cursor: pointer;
+    padding-left: 26px;
+    background-image: url("checkbox.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#login-form input[type="checkbox"]:checked + label{
+    background-image: url("checkbox-active.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* #container {
+   width: 100%;
+   margin: 0 auto;
+}
+
+#contents {
+   max-width: 900px;
+   min-width: 900px;
+   width: 100%;
+   margin: 0 auto;
+}
+
+#section1, #section2 {
+	padding: 10px 20px 20px 0;
+	border-bottom: 5px solid #B1AEB7;
+}
+
+#s2_inner {
+	width: 100%;
+}
+
+.join {
+	display: flex; 수평으로 배치
+	justify-content: center; 가운데 배치
+	align-items: center;
+	max-width: 900px;
+	margin: 40px 10px;
+	height: auto;
+}
+
+.join th{
+	font-size: 15px;
+	font-weight: bold;
+	width: 120px;
+	height: 60px;
+	text-align: center;
+	padding-right: 10px;
+	padding-left: 20px;
+	border-bottom: 1px solid #ccc;
+	background: whitesmoke;
+	margin-right: 5px;
+}
+.join td{
+	padding: 10px 0 10px 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+.input{
+	width: 300px;
+	height: 40px;
+	border: 1px solid gray;
+	box-sizing: border-box;
+	padding: 0 0 0 10px;
+}
+
+.inputButton {
+	background: whitesmoke;
+	font-size: 15px;
+	padding: 5px 10px 5px 10px;
+} */
