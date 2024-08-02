@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper
-	  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
-	  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-	  
-	 <mapper namespace="com.mvc.spring_mvc_ict03_subway.">  <!-- 자기 DAO 따라 매퍼 만드셈 -->
-	 </mapper> 
