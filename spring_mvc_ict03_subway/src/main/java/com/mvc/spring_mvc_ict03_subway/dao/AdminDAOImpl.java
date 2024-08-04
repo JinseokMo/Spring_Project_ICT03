@@ -2,10 +2,9 @@ package com.mvc.spring_mvc_ict03_subway.dao;
 
 
 import java.util.HashMap;
+
 import java.util.List;
 import java.util.Map;
-
-import javax.sql.DataSource;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +27,7 @@ public class AdminDAOImpl implements AdminDAO {
 		map.put("email", email);
 		map.put("pw", pw);
 		
-		AdminDTO dto = sqlSession.selectOne("spring_mvc_ict03_subway.dao.AdminDAO.adminLoginAction", map);
+		AdminDTO dto = sqlSession.selectOne("com.mvc.spring_mvc_ict03_subway.dao.AdminDAO.adminLoginAction", map);
 		
 		
 		return dto;
@@ -36,13 +35,13 @@ public class AdminDAOImpl implements AdminDAO {
 
 	@Override
 	public List<UserDTO> adminUserList() {
-		// TODO Auto-generated method stub
-		return null;
+		List<UserDTO> list = sqlSession.selectList("com.mvc.spring_mvc_ict03_subway.dao.AdminDAO.adminUserList");
+		return list;
 	}
 
 	@Override
 	public List<UserDTO> adminUserListSearch(String userEmail) {
-		// TODO Auto-generated method stub
+		List<UserDTO> list = sqlSession.selectList("spring_mvc_ict03_subway.dao.AdminDAO.adminUserListSearch");
 		return null;
 	}
 

@@ -2,6 +2,7 @@ package com.mvc.spring_mvc_ict03_subway.service;
 
 import java.util.ArrayList;
 
+
 import java.util.List;
 import java.util.Map;
 
@@ -10,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.google.gson.Gson;
 
@@ -19,8 +21,7 @@ import com.mvc.spring_mvc_ict03_subway.dto.AdminDTO;
 import com.mvc.spring_mvc_ict03_subway.dto.BoardDTO;
 import com.mvc.spring_mvc_ict03_subway.dto.UserDTO;
 
-
-
+@Service
 public class AdminServiceImpl implements AdminService{
 	
 	@Autowired
@@ -35,11 +36,11 @@ public class AdminServiceImpl implements AdminService{
 		AdminDTO dto =  dao.adminLoginAction(email, pw);				
 		
 		if(dto == null) {
-			System.out.println("실패띠");
+			System.out.println("�떎�뙣�씈");
 			request.setAttribute("resultNo", resultNo);
 		}
 		else {
-			System.out.println("성공띠");
+			System.out.println("�꽦怨듬씈");
 			resultNo = 1;
 			request.setAttribute("resultNo", resultNo);
 			HttpSession session = request.getSession();

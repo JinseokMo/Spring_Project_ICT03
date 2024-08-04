@@ -8,4 +8,14 @@
 		<select id ="adminLoginAction" parameterType="java.util.Map" resultType="com.mvc.spring_mvc_ict03_subway.dto.AdminDTO">
 			SELECT * FROM admin_tbl WHERE adminEmail = #{email} AND adminPW = #{pw}
 		</select>
+		
+		<select id="adminUserList" resultType="com.mvc.spring_mvc_ict03_subway.dto.AdminDTO">
+			SELECT * FROM user_tbl WHERE show = 'y'
+		</select>
+		
+		<select id ="adminUserListSearch" parameterType="String" resultType = "com.mvc.spring_mvc_ict03_subway.dto.AdminDTO">
+			<![CDATA[
+				SELECT * FROM user_tbl WHERE show = 'y' AND userEmail LIKE CONCAT('%', #{userEmail}, '%')
+			]]>
+		</select>
 	</mapper>
