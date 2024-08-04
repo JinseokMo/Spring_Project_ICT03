@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Built-By: MJS
-Build-Jdk: 11.0.22
+Built-By: HWI
+Build-Jdk: 11.0.24
 Created-By: Maven Integration for Eclipse
 
